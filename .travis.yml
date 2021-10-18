@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - 2.7.2
-- 1.9.3
+- 2.2.29
 - jruby-19mode
 - rbx-2
 deploy:
