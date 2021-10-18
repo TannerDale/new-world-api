@@ -4,6 +4,7 @@ rbenv:
 addons:
   postgresql: 9.6
 before_install:
+  - gem install bundler
   - gem update --system
   - gem --version
 script:
