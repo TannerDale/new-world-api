@@ -1,9 +1,11 @@
 language: ruby
-rvm:
+rbenv:
 - 2.7.2
-- 2.2.29
-- jruby-19mode
-- rbx-2
+addons:
+  postgresql: 9.6
+script:
+- bundle exec rails db:{create,migrate} RAILS_ENV=test
+- bundle exec rspec
 deploy:
   provider: heroku
   app: api-newworld
