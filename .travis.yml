@@ -5,6 +5,9 @@ rvm:
 - jruby-19mode
 - rbx-2
 deploy:
+  provider: heroku
+  app: api-newworld
+  run: rails db:migrate
   api_key:
     secure: fXAr272kdeu26esWXIyVF62kp15k+JjQk1lOmhNhDehkauxyVYprouGYvMYp3/ETEWXXJSaeEOZctm+tbvG6AMkk5afRS35Zbx35i0NC979oa6vHQxd6mPal4wXN46zmtUdh5ZlpXmY9uUbFP738eyiFgbIGw2aMTB7HQowcO3Av4CvPRzowApoRnyxjo0y2I+NlQ9Bb4S6EWQqlEidZyDTJGWgC6QIFnYSKsFg2gF+u17vxwJ3bGCqurkgfFw96+E6wu/lZST1jXXR+eOLi7iSFds0zQYbd38Fzwo4XjVtOM0K2u9HO63scCPNXO0L2M8maPlhTuQNohewpDSXdDYW9jU5pGCgJxhEBCjyvwEB6TCy/JiMaPIyvOqG4uJW/ns6WQUeDQNqquHDfWX4g3Yy9ysGXzNglcl94iTaWusRgFOVlQkCbXOijZdPV7mEKAA1xB3qPYRjPuZnvjJQN+GMQfFOQCy7nfV7+0Sbs1O7kMRUVm5GedjETPKhTLdAUdSzGntRk9K/ZVUUPkoJ71pxKKkSiNqhCTZ+hYEfBKDoo2imRRI761FoVyE0itfKdUdz4ja8ZQ3l4nuC4DsjyKL11B73XarOUPR1HBaUCRt4P+I4n3cePJsyNA7EE6yiZx//4WqAXZPu3oFNi81btKKFBeJP263N0Rm/Whp5kqSQ=
   on:
