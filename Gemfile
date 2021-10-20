@@ -21,6 +21,7 @@ gem 'puma', '~> 3.11'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'factory_bot_rails'
 
 gem 'travis'
 # Reduces boot times through caching; required in config/boot.rb
@@ -35,6 +36,9 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry'
   gem 'rspec-rails'
+  gem 'database_cleaner'
+  gem 'simplecov'
+  gem 'shoulda-matchers'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
